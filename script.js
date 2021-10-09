@@ -123,37 +123,50 @@ function dostuff() {
         opponent = document.getElementsByClassName("oppo");
         if(topss1 < -600){
             topss1 = -250;
+            lefft1 = 25.5
         }
         if(topss2 < -600){
             topss2 = -250;
+            lefft2 = 36.5
+           
         }
         if(topss3 < -600){
             topss3 = -250;
+            lefft3 =  49.5
+           
         }
         if(topss4 < -600){
             topss4 = -250;
+            lefft4 =  60.5
         }
         // if(topss5 < -600){
         //     topss5 = -250;
         // }
         if (car_collide(0)) {
             // console.log("uep")
-            // lefft1 = dec_left();       
+            // lefft1 = dec_left();  
+            topss1 = -250;
+            lefft1 = 25.5     
         }
         if (car_collide(1)) {
             // console.log("uep")
-            topss2-= 12*window.innerHeight/100;
+            topss2 = -250;
+            lefft2 = 36.5
+           
         // lefft2 = dec_left();
         }
         if (car_collide(2)) {
             // console.log("uep")
             // lefft3 = dec_left();
-            topss3 -= 24*window.innerHeight/100;
+            topss3 = -250;
+            lefft3 =  49.5
+            // topss3 -= 24*window.innerHeight/100;
         }
         if (car_collide(3)) {
             // console.log("uep")
             // lefft4 = dec_left();
-            topss4 -= 36*window.innerHeight/100;
+            topss4 = -250;
+            lefft4 =  60.5
             
         }
         // if (car_collide(4)) {
